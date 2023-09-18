@@ -1,15 +1,14 @@
 let biodata = {};
 
 const storedObjects = (key, value) => {
-  let newObj = { ...biodata, [key]: value };
+  const newObj = { ...biodata, [key]: value };
 
-  return (biodata = newObj);
+  return newObj;
 };
 
-storedObjects("nama", "Fauzi");
-console.log(biodata);
-storedObjects("kota", "Bandung");
-console.log(biodata);
-storedObjects("age", 23);
+biodata = storedObjects("nama", "Fauzi");
+
+biodata = storedObjects("alamat", "Cicaheum");
+biodata = storedObjects("age", 23);
 
 console.log(biodata);
