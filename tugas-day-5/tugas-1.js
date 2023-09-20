@@ -160,12 +160,12 @@ let biodata = {
 };
 
 const addMethod = (key, value) => {
-  return { ...biodata, [key]: value };
+  biodata = { ...biodata, [key]: value };
 };
 
-biodata = addMethod("printNama", (nama) => `Hai, ${nama}`);
-biodata = addMethod("printEmail", (email) => `${email}`);
-biodata = addMethod("printPhoneNumber", (nomerHp) => `${nomerHp}`);
+addMethod("printNama", (nama) => `Hai, ${nama}`);
+addMethod("printEmail", (email) => `${email}`);
+addMethod("printPhoneNumber", (nomerHp) => `${nomerHp}`);
 
 console.log(biodata);
 
