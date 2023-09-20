@@ -160,8 +160,18 @@ const biodata = {
 };
 
 function myBiodata(biodataObj) {
-  console.log(`Nama Lengkap : ${biodata.namaLengkap}`);
-  console.log(`Pernah menempuh pendidikan di ${biodata.riwayatPendidikan.length} tempat`);
+  console.log(`Nama Lengkap : ${biodataObj.namaLengkap}`);
+  console.log(`Pernah menempuh pendidikan di ${biodataObj.riwayatPendidikan.length} tempat`);
 }
 
+
 myBiodata(biodata);
+
+// function myBiodata({ namaLengkap, riwayatPendidikan }) {
+//   console.log(`Nama Lengkap : ${namaLengkap}`);
+//   console.log(`Pernah menempuh pendidikan di ${riwayatPendidikan.length} tempat`);
+// }
+
+myBiodata(biodata);
+
+
