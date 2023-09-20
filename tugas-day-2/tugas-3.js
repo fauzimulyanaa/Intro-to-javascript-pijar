@@ -160,8 +160,8 @@ const biodata = {
 };
 
 function printHobbies(listHobi) {
-  for (let i = 0; i < biodata.hobi.length; i++) {
-    console.log(`Hobi ke ${i + 1} adalah ${biodata.hobi[i]}`);
+  for (let i = 0; i < listHobi.hobi.length; i++) {
+    console.log(`Hobi ke ${i + 1} adalah ${listHobi.hobi[i]}`);
   }
 }
 
